@@ -6,7 +6,7 @@ h1{
     margin: 0;
 }
 body{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 #nav-bar{
     position: sticky;
@@ -20,7 +20,9 @@ body{
 .navbar-nav a{
     color: #fff !important;
     font-weight: 600;
-   
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    text-align: left;
 }
 
 .navbar-brand img{
@@ -28,10 +30,34 @@ body{
     padding-left: 20px;
 }
 
-.navbar-nav{
+.navbar-nav li{
     padding: 0 10px;
+}
+.navbar-nav li a {
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
 }
 .fa-bars{
     color: #fff;
     font-size: 30px !important;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+/*--------------------------banner section------------*/
+#banner{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    color: #fff;
+    padding-top: 5%;
+}
+.shop-title{
+ font-size: 40px;
+ font-weight: 600;
+ margin-top: 100px;
+}
+#banner a {
+    color: #fff;
+    text-decoration: none;
 }
