@@ -11,6 +11,15 @@ body{
     top: 0;
     z-index: 10;
 }
+.fa-home{
+    padding-left: 5px;
+}
+.fa-shopping-basket{
+    padding-left: 5px;
+}
+.fa-address-card{
+    padding-left: 5px;
+}
 .navbar{
     background-image: linear-gradient(to right, #a517ba,#5f1782);
     padding: 0 !important;
@@ -21,11 +30,14 @@ body{
     font-family: 'Roboto', sans-serif;
     float: right;
     text-align: left;
+    text-transform: uppercase;
+    
 }
 
 .navbar-brand img{
     height: 40px;
-    padding-left: 20px;
+    padding-left: 30px;
+    border-radius: 50px;
 }
 
 .navbar-nav li{
@@ -56,6 +68,7 @@ body{
  font-weight: 600;
  margin-top: 100px;
  font-family: 'Roboto', sans-serif;
+ 
 }
 #banner a {
     color: #fff;
@@ -82,9 +95,13 @@ body{
    
 }
 .services h4{
+    
     padding: 5px;
     margin-top: 20px;
     text-transform: uppercase;
+}
+.services p{
+    font-size: 10px;
 }
 .title-fruits::before{
     font-family: 'Roboto', sans-serif;
