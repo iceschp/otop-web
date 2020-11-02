@@ -1,6 +1,4 @@
-h1{
-    color: red;
-}
+
 *{
     padding: 0;
     margin: 0;
@@ -38,6 +36,7 @@ body{
     font-weight: 600;
     float: right;
     text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
 .fa-bars{
     color: #fff;
@@ -56,10 +55,12 @@ body{
  font-size: 40px;
  font-weight: 600;
  margin-top: 100px;
+ font-family: 'Roboto', sans-serif;
 }
 #banner a {
     color: #fff;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 .carousel-inner img {
     width:  100%;
@@ -79,4 +80,41 @@ body{
 .services{
     padding: 20px;
    
+}
+.services h4{
+    padding: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.title-fruits::before{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    content: '';
+    background: #7b1798;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title-fruits::after{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    content: '';
+    background: #7b1798;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+#services .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
 }
