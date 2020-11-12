@@ -168,6 +168,7 @@ footer{
     bottom: 0px;
     width: 100%;
     background: #7b1798;
+    color: #fff;
 }
 .foot-main-content{
     display: flex;
@@ -180,6 +181,9 @@ footer{
      font-size: 1.125rem;
      font-weight: 600;
      text-transform: uppercase;
+}
+.foot-left-box {
+    margin-left: 5px;
 }
 .footcontent p {
     font-size: 15px;
@@ -207,7 +211,7 @@ footer{
   transition: 0.3s;
 }
 .foot-left-box .footcontent .social a span:hover{
-    background: #983249;
+    background: #5f1782;
 }
 
 .icon-footer{
