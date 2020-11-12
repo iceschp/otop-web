@@ -209,3 +209,7 @@ footer{
 .foot-left-box .footcontent .social a span:hover{
     background: #983249;
 }
+
+.icon-footer{
+    margin-left: 2%;
+}
