@@ -165,5 +165,47 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 footer{
-    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #7b1798;
+}
+.foot-main-content{
+    display: flex;
+}
+.foot-main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+     font-size: 1.125rem;
+     font-weight: 600;
+     text-transform: uppercase;
+}
+.footcontent p {
+    font-size: 15px;
+}
+.box .footcontent{
+    margin: 20px 0 0 0;
+}
+.foot-left-box .footcontent p {
+    text-align: justify;
+}
+.foot-left-box .footcontent .social {
+   margin: 20px 5px 5px 5px;
+}
+.foot-left-box .footcontent .social a {
+   padding: 0 2px; 
+}
+.foot-left-box .footcontent .social a span {
+  height: 40px;
+  width: 40px; 
+  background: #fff; 
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.foot-left-box .footcontent .social a span:hover{
+    background: #983249;
 }
