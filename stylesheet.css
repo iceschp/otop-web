@@ -77,7 +77,7 @@ body{
 }
 .carousel-inner img {
     width:  100%;
-    height: 100%;
+  
 }
 /*---------SHOPPING ONLINE---------*/
 
@@ -211,5 +211,5 @@ footer{
 }
 
 .icon-footer{
-    margin-left: 2%;
+    margin-left: 2;
 }
