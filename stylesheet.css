@@ -20,6 +20,9 @@ body{
 .fa-address-card{
     padding-right: 5px;
 }
+.fa-pro-motion{
+    padding-right: 5px;
+}
 .navbar{
     background-image: linear-gradient(to right, #a517ba,#5f1782);
     padding: 0 !important;
@@ -154,7 +157,7 @@ p{
     font-family: 'Roboto', sans-serif;
     margin-left: 2%;
 }
-
+/*---------About---------*/
 .imgabout{
     width: 800px;
     margin-top: 20px;
@@ -164,6 +167,7 @@ p{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
+/*---------Footer---------*/
 footer{
     bottom: 0px;
     width: 100%;
@@ -216,4 +220,16 @@ footer{
 
 .icon-footer{
     margin-left: 2;
+}
+
+/*---------Promotion---------*/
+
+.textcode{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 7%;
+}
+
+.button-m{
+    margin-top: 7%;
 }
