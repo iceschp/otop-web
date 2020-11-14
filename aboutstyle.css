@@ -21,3 +21,30 @@
     height: 300px;
     border-radius: 100%;
 }
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.txtcenter{
+    text-align: center;
+}
+
+.txtcenter p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.col{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+}
