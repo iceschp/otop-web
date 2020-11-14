@@ -4,7 +4,7 @@
     $userdata  = new DB_con();
     if(isset($_POST['login'])){
       $uname = $_POST['username'];
-      $password = $_POST['password'];
+      $password = md5($_POST['password']);
 
       $result = $userdata->signin($uname,$password);
       $num = mysqli_fetch_array($result);
@@ -13,7 +13,7 @@
           $_SESSION['id'] = $num['id'];
           $_SESSION['fname'] = $num['fullname'];
           echo "<script>alert('Login Successfull');</script>";
-          echo "<script>window.location.href='welcome.php'</script>";
+          echo "<script>window.location.href='index.php'</script>";
       } else {
         echo "<script>alert('Something went wrong! Please try again');</script>";
         echo "<script>window.location.href='signin.php'</script>";
@@ -51,6 +51,7 @@
     <input type="password" class="form-control" id="password" placeholder="password" name="password">
   </div>
   <button type="submit" name="login" class="btn btn-success">Login</button>
+  <a href="indexRegister.php" class="btn btn-primary">Go to Register</a>
 </form>
      </div>
 

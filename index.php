@@ -1,4 +1,17 @@
+<?php
+    session_start();
+    include_once('function.php');
+
+    if($_SESSION['id']==""){
+        header("location: signin.php");
+    } else {
+       
+    }
+
+?>
+
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>OTOP SHOPPING ONLINE</title>
@@ -31,7 +44,13 @@
                     <a class="nav-link" href="about.html"><span><i class="far fa-address-card"></i>About us</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="promotion.html" ><span><i class="far fa-pro-motion"></i>Promotion</span></a>
+                    <a class="nav-link" href="promotion.html" ><span><i class="fas fa-tags"></i>Promotion</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" ><span><i class="fas fa-user"></i> <?php echo $_SESSION['fname']; ?></span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="logout.php" class="btn btn-danger">Logout</a></span></a>
                   </li>
                 </ul>  
               </div>
