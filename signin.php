@@ -26,7 +26,7 @@
 
 <head>
     <title>OTOP Login Page</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="signin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -39,7 +39,7 @@
 
 <body>
     <div class="container">
-        <h1 class="mt-5">Login Otop shopping online</h1>
+    <a class="navbar-brand" href="#"><img src="image/icon.png"></a><h1 class="mt-5" class="txthead">Login Otop shopping online</h1>
         <hr>
         <form method="post">
 
