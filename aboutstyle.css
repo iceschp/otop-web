@@ -1,81 +1,83 @@
-.aboutbox{
-    background-color: rgb(247, 247, 247);
-    border-radius: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
+.aboutbox {
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-.pcenter{
-    text-align: center;
-    font-weight: bold;
-}
-
-.imgabout{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.pcenter {
+  text-align: center;
+  font-weight: bold;
 }
 
-.post{
-    font-size: 16px;
-    text-indent: 50px;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
+.imgabout {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.txtusing {
+   padding-left: 10px;
 }
 
-.profile{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin: 5%;
+
+.post {
+  font-size: 16px;
+  text-indent: 50px;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 5%;
+}
+
+.container {
+  max-width: 100%;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.txtcenter{
-    text-align: center;
-    background-color:rgb(247, 247, 247);
-    border-radius: 20px;
-    padding-bottom: 10px;
+.txtcenter {
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+  padding-bottom: 10px;
 }
 
-.txtcenter p{
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
+.txtcenter p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.col{
-    position: relative;
-    width: 100%;
-    padding: 20px 10px 0px 10px;
+.col {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 0px 10px;
 }
 
-.gitlink{
-    color: black;
+.gitlink {
+  color: black;
 }
 
-.gitlink:hover{
-    color: blueviolet;
+.gitlink:hover {
+  color: blueviolet;
 }
 
-.gitlink:visited{
-    color: cornflowerblue;
+.gitlink:visited {
+  color: cornflowerblue;
 }
 
-.bgtxt{
-    background-color: rgb(247, 247, 247);
-    border-radius: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
+.bgtxt {
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
