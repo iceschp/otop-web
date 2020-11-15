@@ -1,3 +1,9 @@
+.aboutbox{
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
 .pcenter{
     text-align: center;
     font-weight: bold;
@@ -14,12 +20,15 @@
     font-size: 16px;
     text-indent: 50px;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .profile{
     width: 300px;
     height: 300px;
     border-radius: 100%;
+    margin: 5%;
 }
 
 .container{
@@ -35,6 +44,9 @@
 
 .txtcenter{
     text-align: center;
+    background-color:rgb(247, 247, 247);
+    border-radius: 20px;
+    padding-bottom: 10px;
 }
 
 .txtcenter p{
@@ -47,4 +59,23 @@
     position: relative;
     width: 100%;
     padding: 20px 10px 0px 10px;
+}
+
+.gitlink{
+    color: black;
+}
+
+.gitlink:hover{
+    color: blueviolet;
+}
+
+.gitlink:visited{
+    color: cornflowerblue;
+}
+
+.bgtxt{
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
