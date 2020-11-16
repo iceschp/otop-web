@@ -44,13 +44,13 @@
         <form method="post">
 
             <div class="form-group">
-                <label for="username" class="form-label">User Name</label>
+                <label for="username" class="form-label"><a class="txt">User Name</a></label>
                 <input type="text" class="form-control" id="username" placeholder="username" name="username">
                 <span id="usernameavailble"></span>
             </div>
 
             <div class="form-group">
-                <label for="password" class="form-label">Password</label>
+                <label for="password" class="form-label"><a class="txt">Password</a></label>
                 <input type="password" class="form-control" id="password" placeholder="password" name="password">
             </div>
             <button type="submit" name="login" class="btn btn-success">Login</button>
