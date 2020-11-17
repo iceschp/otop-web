@@ -67,11 +67,11 @@
           </div>
           <br><br>
           <section id="slider">
-            <input type="radio" name="slider" id="s1">
-            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s1" >
+            <input type="radio" name="slider" id="s2" >
             <input type="radio" name="slider" id="s3" checked>
-            <input type="radio" name="slider" id="s4">
-            <input type="radio" name="slider" id="s5">
+            <input type="radio" name="slider" id="s4" >
+            <input type="radio" name="slider" id="s5" >
 
             <label for="s1" id="slide1">
                 <img src="image/strawberry.jpg" height="100%" width="100%">
