@@ -224,3 +224,15 @@ footer{
 .button-m{
     margin-top: 7%;
 }
+
+.old{
+    text-align: center;
+    font-size: medium;
+
+}
+.new{
+    text-align: center;
+    font-size: 35px;
+    color: red;
+    margin-bottom: 6px;
+}
