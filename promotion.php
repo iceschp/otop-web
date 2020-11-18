@@ -25,7 +25,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="image/icon.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
                                 us</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="slidertion.html"><span><i class="fas fa-tags"></i>slidertion</span></a>
+                        <a class="nav-link" href="promotion.php"><span><i class="fas fa-tags"></i>Promotion</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><span><i class="fas fa-user"></i>
@@ -59,11 +59,12 @@
             </div>
         </div>
     </nav>
-    <br>
+    
           <!----------------cont------------->
           <!---------------slidertion Section--------------->
+           <section id="banner">
           <div>
-              <h1 class="headline">SLIDE</h1>
+              <h1 class="headline">PROMOTION SALE</h1>
           </div>
           <br><br>
           <section id="slider">
@@ -89,6 +90,20 @@
                 <img src="image/banana1.jpg" height="100%" width="100%">
             </label>
           </section>
+          <br>
+          <br>
+          <br>
+          </section>
+
+          
+          
+        
+   
+         
+
+
+
+
           <!---------------Services Section--------------->
     <section id="services">
       <div class="conlainer text-center">

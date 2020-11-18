@@ -23,6 +23,12 @@ body{
 .fa-pro-motion{
     padding-right: 5px;
 }
+.fa-tags{
+    padding-right: 5px;
+}
+.fa-user{
+    padding-right: 5px;
+}
 .navbar{
     background-image: linear-gradient(to right, #a517ba,#5f1782);
     padding: 0 !important;
