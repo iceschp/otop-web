@@ -60,6 +60,7 @@
                         <a href="logout.php" class="btn btn-danger">Logout</a></span></a>
                     </li>
                 </ul>
+                <br>
             </div>
         </div>
     </nav>
