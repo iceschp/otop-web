@@ -28,7 +28,6 @@
 </head>
 
 <body>
-<p>mew</p>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="image/icon.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -53,13 +52,14 @@
                         <a class="nav-link" href="promotion.php"><span><i class="fas fa-tags"></i>Promotion</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span><i class="fas fa-user"></i>
+                        <a class="nav-link" href="profile.php"><span><i class="fas fa-user"></i>
                                 <?php echo $_SESSION['fname']; ?></span></a>
                     </li>
                     <li class="nav-item">
                         <a href="logout.php" class="btn btn-danger">Logout</a></span></a>
                     </li>
                 </ul>
+                <br>
             </div>
         </div>
     </nav>
@@ -78,6 +78,8 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
         <!-- <img src="ima"> -->
     </section>
     <!-- Indicators -->
@@ -101,13 +103,13 @@
                 <img src="image/apple1.jpg" alt="apple" width="600" height="600">
             </div>
             <div class="carousel-item">
-                <img src="image/allfruits.jpg" alt="mangoes" width="600" height="600">
+                <img src="image/allfruits.jpg" alt="man3" width="600" height="600">
             </div>
             <div class="carousel-item">
-                <img src="image/strawberry.jpg" alt="mangoes" width="600" height="600">
+                <img src="image/strawberry.jpg" alt="man2" width="600" height="600">
             </div>
             <div class="carousel-item">
-                <img src="image/subpa.jpg" alt="mangoes" width="600" height="600">
+                <img src="image/subpa.jpg" alt="man1" width="600" height="600">
             </div>
         </div>
 

@@ -1,20 +1,28 @@
-.headline{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 42px;
-}
 
 *{
     padding: 0;
     margin: 0;
 }
-
 body{
-    padding: 20px;
-    background: #eee;
-    user-select: none;
+    font-family: 'Roboto', sans-serif;
 }
-
+#banner{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    color: #fff;
+    padding-top: 20%;
+    
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.headline{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    font-weight: 10000;
+}
 [type=radio]{
     display: none;
 }
@@ -35,7 +43,7 @@ body{
     left: 0;
     right: 0;
     cursor: pointer;
-    transition: transform 0.4s ease;
+    transition: transform 0.2s ease;
 }
 
 #s1:checked ~ #slide4,#s2:checked ~ #slide5,
@@ -48,7 +56,7 @@ body{
 #s1:checked ~ #slide5,#s2:checked ~ #slide1,
 #s3:checked ~ #slide2,#s4:checked ~ #slide3,
 #s5:checked ~ #slide4{
- box-shadow: 0 6px 10px 0 rgba(0,0,0,.3),0 2px 2px 0 rgba(0,0,0,.2);
+ box-shadow: 0 13px 25px 0 rgba(0,0,0,.3),0 2px 2px 0 rgba(0,0,0,.2);
  transform: translate3d(-15%,0,-100px);
 }
 

@@ -6,11 +6,12 @@
         $fname = $_POST['fullname'];
         $uname = $_POST['username'];
         $uemail = $_POST['email'];
-        $password = md5($_POST['password']);
+        $password =$_POST['password'];
         
-        $sql = $userdata->registration($fname, $uname, $uemail, $password);
-
+        
+        $sql = $userdata->registration($fname, $uname, $uemail, $password);  
         if ($sql) {
+            
           echo "<script>alert('Registor Successful!');</script>";
           echo "<script>window.location.href='signin.php'</script>";
       } else {

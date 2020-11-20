@@ -50,7 +50,7 @@
                                 us</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="promotion.html"><span><i class="fas fa-tags"></i>Promotion</span></a>
+                        <a class="nav-link" href="promotion.php"><span><i class="fas fa-tags"></i>Promotion</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><span><i class="fas fa-user"></i>
@@ -60,6 +60,7 @@
                         <a href="logout.php" class="btn btn-danger">Logout</a></span></a>
                     </li>
                 </ul>
+                <br>
             </div>
         </div>
     </nav>
