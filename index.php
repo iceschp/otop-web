@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="image/icon.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -196,68 +197,53 @@
         </div>
 
     </section>
+    
+    
     <!---------------------------------------Footer-------------------------------->
-    <footer>
-        <div class="foot-main-content">
-            <div class="foot-left-box">
-                <h2>About us</h2>
-                <div class="footcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        .Explicabo voluptatum minus perferendis saepe sint, repellat vel,
-                        dicta laborum commodi cupiditate, voluptatibus nisi </p>
-                    <div class="social">
-                        <a href="#">
-                            <span class="fab fa-facebook-square "></span>
-                        </a>
-                        <a>
-                            <span style="color: blueviolet;" class="fab fa-instagram icon-footer"></span>
-                        </a>
-                        <a>
-                            <span style="color: rgb(59, 145, 145);" class="fab fa-twitter-square icon-footer"></span>
-                        </a>
-                        <a>
-                            <span style="color: red;" class="fab fa-youtube icon-footer"></span>
-                        </a>
-                    </div>
-                </div>
+    <footer class="footer">
+        <div class="footer-left">
+
+            <img src="image/icon.png">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="foot-center-box">
-                <h2>Address</h2>
-                <div class="footcontent">
-                    <div class="place">
-                        <span class="fas fa-map-marker-alt"></span>
-                        <span class="foot-text">Lorem ipsum dolor sit amet </span>
-                    </div>
-                    <div class="phone">
-                        <span class="fas fa-phone-alt"></span>
-                        <span class="foot-text">099-332-43534 </span>
-                    </div>
-                    <div class="email">
-                        <span class="fas fa-envelope-square"></span>
-                        <span class="foot-text">otopshopping_online@gamil.com</span>
-                    </div>
-                </div>
-            </div>
-            <div class="foot-right-box">
-                <h2>Contact us</h2>
-                <div class="footcontent">
-                    <form action="#">
-                        <div class="email">
-                            <div class="foot-text">Email</div>
-                            <input type="email" required>
-                        </div>
-                        <div class="msg">
-                            <div class="foot-text">Message</div>
-                            <textarea rows="2" cols="25" required></textarea>
-                        </div>
-                        <div class="btn-send">
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    </div>
+    <div>
+        <ul class="footer-right">
+            <li>
+                <h2 class="txt-foot">Product</h2>
+                <ul class="box">
+                    <li><a href="#">Theme Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2 class="txt-foot">Useful link</h2>
+                <ul class="box">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="txt-foot">Address</h2>
+                <ul class="box">
+                    <li><a>123 , Asok</a></li>
+                    <li><a>Bkk Thailand</a></li>
+                </ul>
+            </li>
+        </ul>
+</div>
+        <div class="footer-bottom">
+            <p>All Right reserved by &copy;conceptial 2020</p>
         </div>
     </footer>
 </body>
-
 </html>
