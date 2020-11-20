@@ -26,15 +26,9 @@
         }
 
         public function signin($uname, $password) {
-            $signinquery = mysqli_query($this->dbcon, "SELECT id, fullname FROM tblusers WHERE username = '$uname' AND password = '$password'");
+            $signinquery = mysqli_query($this->dbcon, "SELECT id, fullname ,username ,useremail ,password  FROM tblusers WHERE username = '$uname' AND password = '$password'");
             return $signinquery;
         }
-        public function profile($uname,$fname,$uemail,$password) {
-            $profiledata = mysqli_query($this->dbcon, "SELECT id, fullname ,username ,email FROM tblusers WHERE username = '$uname' , password = '$password' ,email = '$uemail',fullname ='$fname'");
-            return $profiledata;
-        }
-
-        
     }
 
 ?>

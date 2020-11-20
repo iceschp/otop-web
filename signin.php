@@ -6,11 +6,14 @@
     if(isset($_POST['login'])){
       $uname = $_POST['username'];
       $password = md5($_POST['password']);
+      
       $result = $userdata->signin($uname,$password);
       $num = mysqli_fetch_array($result);
       if($num >0){
           $_SESSION['id'] = $num['id'];
           $_SESSION['fname'] = $num['fullname'];
+          $_SESSION['uemail'] = $num['useremail'];
+          $_SESSION['password'] = $num['password'];
           echo "<script>alert('Login Successfull');</script>";
           echo "<script>window.location.href='index.php'</script>";
       } else {

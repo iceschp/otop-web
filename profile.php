@@ -1,13 +1,13 @@
 <?php
     session_start();
     include_once('function.php');
-    
 
     if($_SESSION['id']==""){
-        header("location: singin.php");
+        header("location: signin.php");
     } else {
        
     }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -63,21 +63,29 @@
             </div>
         </div>
     </nav>
-       <!-----------------banner section---------------->
-
-       <div class="container">
-             <from action="" method="post">
-             <button class="btn btn-dark" style="float: right; width:70px" name="Submit1"> Edit</button>
-             </from>
-             <div class="wrapper">
-                 <h2 class="profile">My Profile</h2>    
-             </div>
-       </div>
-       <span><i class="fas fa-user"></i>
-    <?php echo $_SESSION['fname']; ?></span>
-    
-    
+    <!-----------------banner section---------------->
+    <div class="container">
+        <from action="" method="post">
+            <button class="btn btn-dark" style="float: right; width:70px" name="Submit1"> Edit</button>
+        </from>
+        <div class="wrapper">
+            <h2 class="profile">My Profile</h2>
+            <div><i class="fas fa-user"></i>
+                                <?php echo $_SESSION['fname']; ?></div>
+                                <div>
+            
+            <div><i class="fas fa-user"></i>
+                                <?php echo $_SESSION['uemail']; ?></div>
+                                <div>                         
+        </div>
+    </div>
+   
+      
        
+    
+
+
+
 
 
 
