@@ -70,13 +70,21 @@
         </from>
         <div class="wrapper">
             <h2 class="profile">My Profile</h2>
-            <div><i class="fas fa-user"></i>
-                                <?php echo $_SESSION['fname']; ?></div>
-                                <div>
-            
-            <div><i class="fas fa-user"></i>
-                                <?php echo $_SESSION['uemail']; ?></div>
-                                <div>                         
+            <div class="fullname">
+                        <span class="fas fa-user"></span>
+                         <span class="txt-fullname">Fullname</span>
+                         <span><?php echo $_SESSION['fname']; ?></span>
+                        
+                    </div>
+            <span> 
+             <i class="fas fa-user"></i><?php echo $_SESSION['fname']; ?></span>
+             <div>
+             <i class="fas fa-envelope-open-text"></i><?php echo $_SESSION['uemail']; ?></div>
+             <div>
+             <i class="fas fa-key"></i><?php echo $_SESSION['password']; ?></></div>
+            <div>
+            <i class="fas fa-key"></i> <?php echo $_SESSION['uname']; ?></>
+            </div>                  
         </div>
     </div>
    

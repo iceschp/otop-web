@@ -52,7 +52,7 @@
                         <a class="nav-link" href="promotion.php"><span><i class="fas fa-tags"></i>Promotion</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span><i class="fas fa-user"></i>
+                        <a class="nav-link" href="profile.php"><span><i class="fas fa-user"></i>
                                 <?php echo $_SESSION['fname']; ?></span></a>
                     </li>
                     <li class="nav-item">
