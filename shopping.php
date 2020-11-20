@@ -38,5 +38,64 @@
                 </tbody>
             </table>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!---------------------------------------Footer-------------------------------->
+  <footer class="footer">
+        <div class="footer-left">
+
+            <img src="image/icon.png">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+    </div>
+    <div>
+        <ul class="footer-right">
+            <li>
+                <h2 class="txt-foot">Product</h2>
+                <ul class="box">
+                    <li><a href="#">Theme Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2 class="txt-foot">Useful link</h2>
+                <ul class="box">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="txt-foot">Address</h2>
+                <ul class="box">
+                    <li><a>123 , Asok</a></li>
+                    <li><a>Bkk Thailand</a></li>
+                </ul>
+            </li>
+        </ul>
+</div>
+        <div class="footer-bottom">
+            <p>All Right reserved by &copy;conceptial 2020</p>
+        </div>
+    </footer>
     </body>
 </html>

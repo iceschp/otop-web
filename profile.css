@@ -1,14 +1,4 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to right, #a517ba,#5f1782);
-    padding: 0 !important;
-    background: #a517ba;
-}
-
-
-.wrapper{
-    width: 400px;
-    margin: 0 auto;
-    
-    color: #ffffff;  
+.fa-user{
+    width: 10px;
+    height: 10px;
 }

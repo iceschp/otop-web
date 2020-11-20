@@ -36,7 +36,7 @@
             <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
+           
             <div class="collaspe navber-collaspe" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -60,7 +60,7 @@
                         <a href="logout.php" class="btn btn-danger">Logout</a></span></a>
                     </li>
                 </ul>
-                <br>
+                
             </div>
         </div>
     </nav>
@@ -201,20 +201,21 @@
     
     <!---------------------------------------Footer-------------------------------->
     <footer class="footer">
-        <div class="footer-left">
-
-            <img src="image/icon.png">
-            
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</p>
-            <div class="socials">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-    </div>
     <div>
         <ul class="footer-right">
-            <li>
+        <li class="icon-footer">
+            <ul class="box">
+              <img class="imgfoot" src="image/icon.png">
+                
+               
+                    <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</a></li>
+                    
+                    <span><a href="#" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
+                    <span><a href="#" class="socials"><i class="fab fa-twitter-square"></i></a></span>
+                    <span><a href="#" class="socials"><i class="fab fa-instagram"></i></a></span>
+                </ul>
+            </li>
+            <li class="Product-footer">
                 <h2 class="txt-foot">Product</h2>
                 <ul class="box">
                     <li><a href="#">Theme Design</a></li>
@@ -232,13 +233,7 @@
                     <li><a href="#">Pricing</a></li>
                 </ul>
             </li>
-            <li>
-                <h2 class="txt-foot">Address</h2>
-                <ul class="box">
-                    <li><a>123 , Asok</a></li>
-                    <li><a>Bkk Thailand</a></li>
-                </ul>
-            </li>
+            
         </ul>
 </div>
         <div class="footer-bottom">

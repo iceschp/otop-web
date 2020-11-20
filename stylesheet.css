@@ -168,20 +168,7 @@ p{
 }
 
 /*---------Footer---------*/
-main{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #99bb99;
-    line-height: 3.5;
-    font-size: 80px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+
 
 footer{
     display: -webkit-flex;
@@ -190,7 +177,7 @@ footer{
     display: -o-flex;
     display: flex;
     flex-flow: row wrap;
-    padding: 50px;
+    padding: 30px;
     color: #fff;
     background-color:  #a517ba;
 }
@@ -208,17 +195,14 @@ footer{
     margin-bottom: 2em;
 }
 .txt-foot{
-    font-size: 25px;
+    font-size: 15px;
     color: #fff;
 }
 
 
-.footer-left img{
-    width: 20%;
-    margin-left: 40%;
-    border-radius: 50%;
-   
-    
+.imgfoot{
+    width: 10%;
+    border-radius: 50%; 
 }
 
 
@@ -226,24 +210,20 @@ footer{
     font-size: 16px;
     text-align: center;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 20px;
     margin-left: 20%;
     padding-left: 50px;
 }
-
 .footer ul{
     list-style: none;
     padding-left: 0;
 }
-
 .footer li{
     line-height: 2em;
 }
-
 .footer a{
     text-decoration: none;
 }
-
 .footer-right{
         display: -webkit-flex;
         display: -moz-flex;
@@ -252,21 +232,21 @@ footer{
         display: flex;
         flex-flow: row wrap;
 }
-
 .footer-right > *{
     flex: 1 70%;
     margin-right: 1.23em;
 }
-
 .box a{
     color: #fff
 }
-
 .footer-bottom{
     text-align: center;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 10px;
     font-weight: 800;
+}
+.footer-bottom p {
+    font-size: 10px;
 }
 
 .footer-left p{
@@ -274,11 +254,10 @@ footer{
     color: #fff;
     
 }
-.socials {
-    margin-left: 45%;
+.icon-footer {
+    margin-left: 20px;
 }
-
-.socials a{
+.socials {
     background: #5f1782;
     border-radius: 10px;
     width: 40px;
@@ -286,8 +265,10 @@ footer{
     display: inline-block;
     margin-right: 10px;
 }
-
-.socials a i{
+.Product-footer{
+   margin-left: 100px;
+}
+.socials  i{
     color: #e7f2f4;
     padding: 10px 12px;
     font-size: 20px;

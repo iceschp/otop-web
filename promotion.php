@@ -13,7 +13,6 @@
 <html>
     <head>
         <title>OTOP SHOPPING ONLINE</title>
-       
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="promotion.css">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -39,7 +38,7 @@
                         <a class="nav-link" href="index.php"><span><i class="fas fa-home"></i></span>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span><i class="fas fa-shopping-basket"></i>Product</span></a>
+                        <a class="nav-link" href="shopping.php"><span><i class="fas fa-shopping-basket"></i>Product</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.php"><span><i class="far fa-address-card"></i>About
@@ -49,25 +48,26 @@
                         <a class="nav-link" href="promotion.php"><span><i class="fas fa-tags"></i>Promotion</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span><i class="fas fa-user"></i>
+                        <a class="nav-link" href="profile.php"><span><i class="fas fa-user"></i>
                                 <?php echo $_SESSION['fname']; ?></span></a>
                     </li>
                     <li class="nav-item">
                         <a href="logout.php" class="btn btn-danger">Logout</a></span></a>
                     </li>
                 </ul>
-                <br>
+                
             </div>
         </div>
     </nav>
     
           <!----------------cont------------->
           <!---------------slidertion Section--------------->
-           <section id="banner">
+           <div id="banner">
           <div>
               <h1 class="headline">PROMOTION SALE</h1>
           </div>
-          <br><br>
+          <br>
+          <br>
           <section id="slider">
             <input type="radio" name="slider" id="s1" >
             <input type="radio" name="slider" id="s2" >
@@ -91,10 +91,8 @@
                 <img src="image/banana1.jpg" height="100%" width="100%">
             </label>
           </section>
-          <br>
-          <br>
-          <br>
-          </section>
+             <br><br>
+          </div>
 
           
           
@@ -184,5 +182,51 @@
       </div>
 
   </section>
+
+
+
+
+  <!---------------------------------------Footer-------------------------------->
+  <<!---------------------------------------Footer-------------------------------->
+  <footer class="footer">
+    <div>
+        <ul class="footer-right">
+        <li class="icon-footer">
+            <ul class="box">
+              <img class="imgfoot" src="image/icon.png">
+                
+               
+                    <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</a></li>
+                    
+                    <span><a href="#" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
+                    <span><a href="#" class="socials"><i class="fab fa-twitter-square"></i></a></span>
+                    <span><a href="#" class="socials"><i class="fab fa-instagram"></i></a></span>
+                </ul>
+            </li>
+            <li class="Product-footer">
+                <h2 class="txt-foot">Product</h2>
+                <ul class="box">
+                    <li><a href="#">Theme Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2 class="txt-foot">Useful link</h2>
+                <ul class="box">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+</div>
+        <div class="footer-bottom">
+            <p>All Right reserved by &copy;conceptial 2020</p>
+        </div>
+    </footer>
           </body>
           </html>
