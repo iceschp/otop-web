@@ -35,7 +35,7 @@
             <div class="collaspe navber-collaspe" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php"><span><i class="fas fa-home"></i></span>Home</a>
+                        <a class="nav-link" href="index1.php"><span><i class="fas fa-home"></i></span>Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="shopping.php"><span><i class="fas fa-shopping-basket"></i>Product</span></a>
@@ -76,19 +76,19 @@
             <input type="radio" name="slider" id="s5" >
 
             <label for="s1" id="slide1">
-                <img src="image/strawberry.jpg" height="100%" width="100%">
+                <img src="image/bannersale1.jpg" height="100%" width="100%">
             </label>
             <label for="s2" id="slide2">
-                <img src="image/subpa.jpg" height="100%" width="100%">
+                <img src="image//bannersale2.jpg" height="100%" width="100%">
             </label>
             <label for="s3" id="slide3">
-                <img src="image/banana.jpg" height="100%" width="100%">
+                <img src="image/bannersale3.jpg" height="100%" width="100%">
             </label>
             <label for="s4" id="slide4">
-                <img src="image/apple1.jpg" height="100%" width="100%">
+                <img src="image/bannersale4.jpg" height="100%" width="100%">
             </label>
             <label for="s5" id="slide5">
-                <img src="image/banana1.jpg" height="100%" width="100%">
+                <img src="image/bannersale5.jpg" height="100%" width="100%">
             </label>
           </section>
              <br><br>
@@ -121,12 +121,9 @@
                   <img src="image/Guava.jpg" class="fruits-img">
                   <h4>DEHYDRATED GUAVA</h4>
                   <button class="bnt-shop"><a><i class="fas fa-shopping-basket"></i>ADD</a></button>
-                  <div class="old">
-                    <p>3000</p>
-                  </div>
-                  <div class="new">
-                    <h4>1500</h4>
-                  </div>
+                  <p>YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK
+                      YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK</p>
+                  
               </div>
               <div class="col-md-4 services">
                   <img src="image/straw.jpg" class="fruits-img">
@@ -198,9 +195,9 @@
                
                     <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</a></li>
                     
-                    <span><a href="#" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
-                    <span><a href="#" class="socials"><i class="fab fa-twitter-square"></i></a></span>
-                    <span><a href="#" class="socials"><i class="fab fa-instagram"></i></a></span>
+                    <span><a href="https://www.facebook.com/eatgostudygo" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
+                    <span><a href="https://twitter.com" class="socials"><i class="fab fa-twitter-square"></i></a></span>
+                    <span><a href="https://www.instagram.com/eatgostudygo/" class="socials"><i class="fab fa-instagram"></i></a></span>
                 </ul>
             </li>
             <li class="Product-footer">

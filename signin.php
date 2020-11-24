@@ -16,7 +16,7 @@
           $_SESSION['uname'] = $num['username'];
           $_SESSION['password'] = $num['password'];
           echo "<script>alert('Login Successfull');</script>";
-          echo "<script>window.location.href='index.php'</script>";
+          echo "<script>window.location.href='index1.php'</script>";
       } else {
         echo "<script>alert('Something went wrong! Please try again');</script>";
         echo "<script>window.location.href='signin.php'</script>";

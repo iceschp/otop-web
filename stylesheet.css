@@ -32,6 +32,9 @@ body{
 .fa-user{
     padding-right: 5px;
 }
+.bnt-shop{
+    color: #a517ba;
+}
 .navbar{
     background-image: linear-gradient(to right, #a517ba,#5f1782);
     padding: 0 !important;
@@ -146,6 +149,7 @@ body{
     border: none;
     border-radius: 20px;
     background-image: linear-gradient(to right, #a517ba,#5f1782);
+   
     
 }
 #services .bnt-shop{
@@ -160,6 +164,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-weight: 600;
+    
 }
 p{
     font-size: 30px;

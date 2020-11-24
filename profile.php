@@ -38,7 +38,7 @@
             <div class="collaspe navber-collaspe" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php"><span><i class="fas fa-home"></i></span>Home</a>
+                        <a class="nav-link" href="index1.php"><span><i class="fas fa-home"></i></span>Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="shopping.php"><span><i class="fas fa-shopping-basket"></i>Product</span></a>
@@ -151,9 +151,9 @@
                
                     <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</a></li>
                     
-                    <span><a href="#" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
-                    <span><a href="#" class="socials"><i class="fab fa-twitter-square"></i></a></span>
-                    <span><a href="#" class="socials"><i class="fab fa-instagram"></i></a></span>
+                    <span><a href="https://www.facebook.com/eatgostudygo" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
+                    <span><a href="https://twitter.com" class="socials"><i class="fab fa-twitter-square"></i></a></span>
+                    <span><a href="https://www.instagram.com/eatgostudygo/" class="socials"><i class="fab fa-instagram"></i></a></span>
                 </ul>
             </li>
             <li class="Product-footer">

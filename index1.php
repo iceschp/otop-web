@@ -11,6 +11,18 @@
 ?>
 
 <!DOCTYPE html>
+<style>
+    .button {
+    box-shadow: none;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+}
+    }
+    
+</style>
 
 <html>
 
@@ -64,8 +76,25 @@
             </div>
         </div>
     </nav>
-
-   
+    <!-----------------banner section---------------->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="shop-title">BEST SHOPPING ONLINE</p>
+                    <p>YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK
+                        YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK</p>
+                    <a href="#"><i class="far fa-play-circle"></i>Watch Tutorials</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="image/online shopping .png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- <img src="ima"> -->
+    </section>
     <!-- Indicators -->
     <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -81,19 +110,19 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="image/dry1.png" alt="banana" width="600" height="600">
+                <img src="image/indeximg.png" alt="banana" width="600" height="600">
             </div>
             <div class="carousel-item">
-                <img src="image/dry2.jpg" alt="apple" width="600" height="600">
+                <img src="image/indeximg1.jpg" alt="apple" width="600" height="600">
             </div>
             <div class="carousel-item">
-                <img src="image/dry3.jpg" alt="man3" width="600" height="600">
+                <img src="image/indeximg4.jpg" alt="man3" width="600" height="600">
             </div>
             <div class="carousel-item">
-                <img src="image/dry4.jpg" alt="man2" width="600" height="600">
+                <img src="image/indeximg3.jpg" alt="man2" width="600" height="600">
             </div>
             <div class="carousel-item">
-                <img src="image/dry5.jpeg" alt="man1" width="600" height="600">
+                <img src="image/indeximg6.jpg" alt="man1" width="600" height="600">
             </div>
         </div>
 
@@ -106,8 +135,8 @@
         </a>
     </div>
     <!---------------Services Section--------------->
-   
-  
+
+</div>
 <br><br><br><br><br>
 
 <h1 style=" padding-left: 35%;">DEHYDRATED FRUITS</h1>
@@ -134,28 +163,14 @@ while($row = mysqli_fetch_assoc($result)) {
     $price = $row["pice"];
     print "<div class=\"container\" style=\"margin: 5;\">";
    print " <div class=\"row\">";
-   print " <div class=\"col-sm-4\">";
+   print " <div class=\"col-sm-6\">";
     print "  <div class=\"card\"> ";
    print  "  <div class=\"card-body\">";
      print    " <img src=\"$pic\" class=\"fruits-img\">";
     print "      <h5 class=\"card-title\">$topic</h5>";
     print "     <p class=\"card-text\">$content</p>";
     print   " <button  class =\"bnt-shop\"class=\"btn btn-dark\" style=\"  box-shadow: none;
-    padding: 5px 15px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 20px;
-    background-image: linear-gradient(to right, #a517ba,#5f1782);\"><a><i class=\"fas fa-shopping-basket\" style=\"color: #fff;\"></i>$price</a></button>";
-    print "   </div> ";
-     print" </div>";
-    print " </div>";
-    print " <div class=\"col-sm-4\">";
-    print "  <div class=\"card\"> ";
-   print  "  <div class=\"card-body\">";
-     print    " <img src=\"$pic\" class=\"fruits-img\">";
-    print "      <h5 class=\"card-title\">$topic</h5>";
-    print "     <p class=\"card-text\">$content</p>";
-    print   " <button  class =\"bnt-shop\"class=\"btn btn-dark\" style=\"  box-shadow: none;
+    padding-left: 30%;
     padding: 5px 15px;
     margin-bottom: 10px;
     border: none;
@@ -165,7 +180,7 @@ while($row = mysqli_fetch_assoc($result)) {
      print" </div>";
     print " </div>";
 
-    print " <div class=\"col-sm-4\">";
+    print " <div class=\"col-sm-6\">";
     print "  <div class=\"card\"> ";
    print  "  <div class=\"card-body\">";
      print    " <img src=\"$pic\" class=\"fruits-img\">";
