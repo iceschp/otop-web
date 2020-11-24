@@ -107,7 +107,7 @@
     <section id="services">
       <div class="conlainer text-center">
           <h1 class="title-fruits">DEHYDRATED FRUITS</h1>
-          <button type="button" class="btn btn-primary">ALL FRUITS</button>
+          <button type="button" class="btn btn-primary "><a href="shopping.php" class="btn-fr" >ALL FRUITS</a></button>
           <div class="row text-center">
 
               <div class="col-md-4 services">

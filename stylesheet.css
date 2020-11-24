@@ -160,11 +160,8 @@ body{
     border-radius: 20px;
     background-image: linear-gradient(to right, #a517ba,#5f1782);
 }
-#services .bnt-shop a {
-    font-family: 'Roboto', sans-serif;
+a.btn-fr {
     color: #fff;
-    font-weight: 600;
-    
 }
 p{
     font-size: 30px;
