@@ -18,8 +18,9 @@
     margin-bottom: 10px;
     border: none;
     border-radius: 20px;
-    background-image: linear-gradient(to right, #a517ba,#5f1782);
-}
+    
+    ;
+
     }
     
 </style>
