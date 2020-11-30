@@ -9,9 +9,9 @@ body{
 #banner{
     background-image: linear-gradient(to right, #a517ba,#5f1782);
     color: #fff;
-    padding-top: 20%;
-    
+    padding-top: 5%;
 }
+
 #nav-bar{
     position: sticky;
     top: 0;

@@ -13,7 +13,6 @@
 <html>
     <head>
         <title>OTOP SHOPPING ONLINE</title>
-       
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="promotion.css">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -36,10 +35,10 @@
             <div class="collaspe navber-collaspe" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php"><span><i class="fas fa-home"></i></span>Home</a>
+                        <a class="nav-link" href="index1.php"><span><i class="fas fa-home"></i></span>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span><i class="fas fa-shopping-basket"></i>Product</span></a>
+                        <a class="nav-link" href="shopping.php"><span><i class="fas fa-shopping-basket"></i>Product</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.php"><span><i class="far fa-address-card"></i>About
@@ -49,25 +48,26 @@
                         <a class="nav-link" href="promotion.php"><span><i class="fas fa-tags"></i>Promotion</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span><i class="fas fa-user"></i>
+                        <a class="nav-link" href="profile.php"><span><i class="fas fa-user"></i>
                                 <?php echo $_SESSION['fname']; ?></span></a>
                     </li>
                     <li class="nav-item">
                         <a href="logout.php" class="btn btn-danger">Logout</a></span></a>
                     </li>
                 </ul>
-                <br>
+                
             </div>
         </div>
     </nav>
     
           <!----------------cont------------->
           <!---------------slidertion Section--------------->
-           <section id="banner">
+           <div id="banner">
           <div>
               <h1 class="headline">PROMOTION SALE</h1>
           </div>
-          <br><br>
+          <br>
+          <br>
           <section id="slider">
             <input type="radio" name="slider" id="s1" >
             <input type="radio" name="slider" id="s2" >
@@ -76,25 +76,23 @@
             <input type="radio" name="slider" id="s5" >
 
             <label for="s1" id="slide1">
-                <img src="image/strawberry.jpg" height="100%" width="100%">
+                <img src="image/bannersale1.jpg" height="100%" width="100%">
             </label>
             <label for="s2" id="slide2">
-                <img src="image/subpa.jpg" height="100%" width="100%">
+                <img src="image//bannersale2.jpg" height="100%" width="100%">
             </label>
             <label for="s3" id="slide3">
-                <img src="image/banana.jpg" height="100%" width="100%">
+                <img src="image/bannersale3.jpg" height="100%" width="100%">
             </label>
             <label for="s4" id="slide4">
-                <img src="image/apple1.jpg" height="100%" width="100%">
+                <img src="image/bannersale4.jpg" height="100%" width="100%">
             </label>
             <label for="s5" id="slide5">
-                <img src="image/banana1.jpg" height="100%" width="100%">
+                <img src="image/bannersale5.jpg" height="100%" width="100%">
             </label>
           </section>
-          <br>
-          <br>
-          <br>
-          </section>
+             <br><br>
+          </div>
 
           
           
@@ -109,7 +107,7 @@
     <section id="services">
       <div class="conlainer text-center">
           <h1 class="title-fruits">DEHYDRATED FRUITS</h1>
-          <button type="button" class="btn btn-primary">ALL FRUITS</button>
+          <button type="button" class="btn btn-primary "><a href="shopping.php" class="btn-fr" >ALL FRUITS</a></button>
           <div class="row text-center">
 
               <div class="col-md-4 services">
@@ -123,12 +121,9 @@
                   <img src="image/Guava.jpg" class="fruits-img">
                   <h4>DEHYDRATED GUAVA</h4>
                   <button class="bnt-shop"><a><i class="fas fa-shopping-basket"></i>ADD</a></button>
-                  <div class="old">
-                    <p>3000</p>
-                  </div>
-                  <div class="new">
-                    <h4>1500</h4>
-                  </div>
+                  <p>YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK
+                      YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK YAMAZAHAIMAK</p>
+                  
               </div>
               <div class="col-md-4 services">
                   <img src="image/straw.jpg" class="fruits-img">
@@ -184,5 +179,51 @@
       </div>
 
   </section>
+
+
+
+
+  <!---------------------------------------Footer-------------------------------->
+  <<!---------------------------------------Footer-------------------------------->
+  <footer class="footer">
+    <div>
+        <ul class="footer-right">
+        <li class="icon-footer">
+            <ul class="box">
+              <img class="imgfoot" src="image/icon.png">
+                
+               
+                    <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</a></li>
+                    
+                    <span><a href="https://www.facebook.com/eatgostudygo" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
+                    <span><a href="https://twitter.com" class="socials"><i class="fab fa-twitter-square"></i></a></span>
+                    <span><a href="https://www.instagram.com/eatgostudygo/" class="socials"><i class="fab fa-instagram"></i></a></span>
+                </ul>
+            </li>
+            <li class="Product-footer">
+                <h2 class="txt-foot">Product</h2>
+                <ul class="box">
+                    <li><a href="#">Theme Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2 class="txt-foot">Useful link</h2>
+                <ul class="box">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+</div>
+        <div class="footer-bottom">
+            <p>All Right reserved by &copy;conceptial 2020</p>
+        </div>
+    </footer>
           </body>
           </html>

@@ -40,10 +40,10 @@
             <div class="collaspe navber-collaspe" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php"><span><i class="fas fa-home"></i></span>Home</a>
+                        <a class="nav-link" href="index1.php"><span><i class="fas fa-home"></i></span>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span><i class="fas fa-shopping-basket"></i>Product</span></a>
+                        <a class="nav-link" href="shopping.php"><span><i class="fas fa-shopping-basket"></i>Product</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.php"><span><i class="far fa-address-card"></i>About
@@ -53,14 +53,14 @@
                         <a class="nav-link" href="promotion.php"><span><i class="fas fa-tags"></i>Promotion</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span><i class="fas fa-user"></i>
+                        <a class="nav-link" href="profile.php"><span><i class="fas fa-user"></i>
                                 <?php echo $_SESSION['fname']; ?></span></a>
                     </li>
                     <li class="nav-item">
                         <a href="logout.php" class="btn btn-danger">Logout</a></span></a>
                     </li>
                 </ul>
-                <br>
+                
             </div>
         </div>
     </nav>
@@ -115,75 +115,56 @@
     <div class="txtusing">
     <div class="container  bgtxt">
         <div class="row">
-            <div class="col-md" class="txt">
+            <div class="col-md">
                 <p>We're using HTML CSS JAVASCRIPT PHP on this website.</p>
             </div>
             <div class="col-md">
-                <p>abcdefg</p>
+                <img src="image/logocode.png" width="500px">
             </div>
         </div>
     </div>
     </div>
     <br>
-    <footer>
-        <div class="foot-main-content">
-            <div class="foot-left-box">
-                <h2>About us</h2>
-                <div class="footcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        .Explicabo voluptatum minus perferendis saepe sint, repellat vel,
-                        dicta laborum commodi cupiditate, voluptatibus nisi </p>
-                    <div class="social">
-                        <a href="#">
-                            <span class="fab fa-facebook-square "></span>
-                        </a>
-                        <a>
-                            <span style="color: blueviolet;" class="fab fa-instagram icon-footer"></span>
-                        </a>
-                        <a>
-                            <span style="color: rgb(59, 145, 145);" class="fab fa-twitter-square icon-footer"></span>
-                        </a>
-                        <a>
-                            <span style="color: red;" class="fab fa-youtube icon-footer"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="foot-center-box">
-                <h2>Address</h2>
-                <div class="footcontent">
-                    <div class="place">
-                        <span class="fas fa-map-marker-alt"></span>
-                        <span class="foot-text">Lorem ipsum dolor sit amet </span>
-                    </div>
-                    <div class="phone">
-                        <span class="fas fa-phone-alt"></span>
-                        <span class="foot-text">099-332-43534 </span>
-                    </div>
-                    <div class="email">
-                        <span class="fas fa-envelope-square"></span>
-                        <span class="foot-text">otopshopping_online@gamil.com</span>
-                    </div>
-                </div>
-            </div>
-            <div class="foot-right-box">
-                <h2>Contact us</h2>
-                <div class="footcontent">
-                    <form action="#">
-                        <div class="email">
-                            <div class="foot-text">Email</div>
-                            <input type="email" required>
-                        </div>
-                        <div class="msg">
-                            <div class="foot-text">Message</div>
-                            <textarea rows="2" cols="25" required></textarea>
-                        </div>
-                        <div class="btn-send">
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    
+        <!---------------------------------------Footer-------------------------------->
+    <footer class="footer">
+    <div>
+        <ul class="footer-right">
+        <li class="icon-footer">
+            <ul class="box">
+              <img class="imgfoot" src="image/icon.png">
+                
+               
+                    <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</a></li>
+                    
+                    <span><a href="https://www.facebook.com/eatgostudygo" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
+                    <span><a href="https://twitter.com" class="socials"><i class="fab fa-twitter-square"></i></a></span>
+                    <span><a href="https://www.instagram.com/eatgostudygo/" class="socials"><i class="fab fa-instagram"></i></a></span>
+                </ul>
+            </li>
+            <li class="Product-footer">
+                <h2 class="txt-foot">Product</h2>
+                <ul class="box">
+                    <li><a href="#">Theme Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Plugin Design</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2 class="txt-foot">Useful link</h2>
+                <ul class="box">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+</div>
+        <div class="footer-bottom">
+            <p>All Right reserved by &copy;conceptial 2020</p>
         </div>
     </footer>
 </body>
