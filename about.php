@@ -115,11 +115,11 @@
     <div class="txtusing">
     <div class="container  bgtxt">
         <div class="row">
-            <div class="col-md" class="txt">
+            <div class="col-md">
                 <p>We're using HTML CSS JAVASCRIPT PHP on this website.</p>
             </div>
             <div class="col-md">
-                <p>abcdefg</p>
+                <img src="image/logocode.png" width="500px">
             </div>
         </div>
     </div>

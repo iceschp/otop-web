@@ -156,55 +156,34 @@ die("Connection failed: " . mysqli_connect_error());
 }
 $sql = "SELECT * FROM Shopping_Otop";
 $result = mysqli_query($conn, $sql);
+
+print "<div class=\"row\">";
+
 while($row = mysqli_fetch_assoc($result)) {
   $id = $row["ID"];
 	$topic = $row["topic"];
 	$pic = $row["pic"];
     $content = $row["content"];
     $price = $row["pice"];
-    print "<div class=\"container\" style=\"margin: 5;\">";
-   print " <div class=\"row\">";
-   print " <div class=\"col-sm-6\">";
-    print "  <div class=\"card\"> ";
-   print  "  <div class=\"card-body\">";
-     print    " <img src=\"$pic\" class=\"fruits-img\">";
-    print "      <h5 class=\"card-title\">$topic</h5>";
-    print "     <p class=\"card-text\">$content</p>";
-    print   " <button  class =\"bnt-shop\"class=\"btn btn-dark\" style=\"  box-shadow: none;
+    
+    print "<div class=\"col-sm-6\">";
+    print "<div class=\"card\"> ";
+    print "<div class=\"card-body\">";
+    print "<img src=\"$pic\" class=\"fruits-img\">";
+    print "<h5 class=\"card-title\">$topic</h5>";
+    print "<p class=\"card-text\">$content</p>";
+    print "<button  class =\"bnt-shop\"class=\"btn btn-dark\" style=\"  box-shadow: none;
     padding-left: 30%;
     padding: 5px 15px;
     margin-bottom: 10px;
     border: none;
     border-radius: 20px;
     background-image: linear-gradient(to right, #a517ba,#5f1782);\"><a><i class=\"fas fa-shopping-basket\" style=\"color: #fff;\"></i>$price</a></button>";
-    print "   </div> ";
-     print" </div>";
-    print " </div>";
+    print "</div>";
+    print "</div>";
+    print "</div>";
 
-    print " <div class=\"col-sm-6\">";
-    print "  <div class=\"card\"> ";
-   print  "  <div class=\"card-body\">";
-     print    " <img src=\"$pic\" class=\"fruits-img\">";
-    print "      <h5 class=\"card-title\">$topic</h5>";
-    print "     <p class=\"card-text\">$content</p>";
-    print   " <button  class =\"bnt-shop\"class=\"btn btn-dark\" style=\"  box-shadow: none;
-    padding: 5px 15px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 20px;
-    background-image: linear-gradient(to right, #a517ba,#5f1782);\"><a><i class=\"fas fa-shopping-basket\" style=\"color: #fff;\"></i>$price</a></button>";
-    print "   </div> ";
-     print" </div>";
-    print " </div>";
-    print " <hr>";
-    print  "</div>";
-    print  "</div>";
-    // print " <div class=\"col-md-4 services\">";
-    // print    " <img src=\"$pic\" class=\"fruits-img\">";
-    // print    " <h4>$topic</h4> ";
-    // print   " <button  class =\"bnt-shop\"class=\"btn btn-dark\"><a><i class=\"fas fa-shopping-basket\"></i>$price</a></button>";
-    // print "  <p>$content</p>" ;
-    // print "</div> \n";
+    print "<hr>";
 }
 mysqli_close($conn);
 ?>
