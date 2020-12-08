@@ -17,6 +17,7 @@
 <head>
     <title>OTOP SHOPPING ONLINE</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="shopping.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -28,7 +29,7 @@
 </head>
 
 <body>
-    
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="image/icon.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -105,9 +106,63 @@
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
+
+<div id="shopping-cart">
+    <div class="txt-heading">Shopping Cart</div>
+    <a href="shopping.php?action=empty" id="btnEmpty">Empty Cart</a>
+
+    <table class="tbl-cart" cellpadding="10" cellspacing="1">
+        <tbody>
+            <tr>
+                <th style="text-align: left;">Name</th>
+                <th style="text-align: left;">Code</th>
+                <th style="text-align: right;" width="5%">Quantity</th>
+                <th style="text-align: right;" width="10%">Unite Price</th>
+                <th style="text-align: right;" width="10%">Price</th>
+                <th style="text-align: right;" width="5%">Remove</th>
+            </tr>
+
+            <tr>
+                <td img scr="product-images" alt=""></td>
+                <td>ABCDEF</td>
+                <td style="text-align: right;">1</td>
+                <td style="text-align: right;">$1000</td>
+                <td style="text-align: right;">$1000</td>
+                <td style="text-align: center;"><a href="#" class="btnRemoveAction"><img style="width: 20px;"src="image/icon-delete.png" alt="Remove Item"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="right">Total:</td>
+                <td align="right">1</td>
+                <td align="right" colspan="2">$1000.00</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="product-grid">
+    <div class="producy-item">
+        <form action="shopping.php?action=add&code">
+            <div class="product-image">
+                <img src="" alt="images">
+            </div>
+            <div class="product-title-footer">
+                <div class="product-title">Camera</div>
+                <div class="product-price">$1000</div>
+                <div class="cart-action">
+                    <input type="text" class="product-quantity" name="quantity" value="1" size="2">
+                    <input type="submit" value="Add to cart" class="btnAddAction">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
     <!---------------Services Section--------------->
-   
-  
 <br><br><br><br><br>
 
 <h1 style=" padding-left: 35%;">DEHYDRATED FRUITS</h1>

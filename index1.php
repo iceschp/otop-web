@@ -137,15 +137,13 @@
     </div>
     <!---------------Services Section--------------->
 
-</div>
 <br><br><br><br><br>
 
 <h1 style=" padding-left: 35%;">DEHYDRATED FRUITS</h1>
 <br><br><br>
 
 <br>
-            
-            
+                    
 <div class="container" style="margin-top: 5;">
 <?php
 // Create connection
@@ -187,7 +185,6 @@ while($row = mysqli_fetch_assoc($result)) {
 }
 mysqli_close($conn);
 ?>
-</div>
 </div>
 <br><br><br>
 
