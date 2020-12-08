@@ -94,3 +94,10 @@
     vertical-align: middle;
     margin-right: 15px;
 }
+
+.no-records{
+    text-align: center;
+    clear: both;
+    margin: 40px 0;
+    color: red;
+}

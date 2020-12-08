@@ -9,7 +9,58 @@
     }
 
 ?>
+<?php 
+    session_start();
+    include_once('shoppingdb.php');
+    $db_handle = new dbcontroller();
 
+        if(!empty($_GET["action"])){
+            switch($_GET["action"]){
+                case "add":
+                    if(!empty($_POST["quantity"])) {
+                        $producemycode = $db_handle -> runquery("SELECT * FROM Shopping_Otop WHERE content = '". $_GET["content"] ."'");
+                        $itemArray = array($producemycode[0]["content"] => (array('name' => $producemycode[0]["topic"],
+                                                                                  'code' => $producemycode[0]["content"], 
+                                                                                  'quantity' => $_POST[0]["quantity"],
+                                                                                  'price' => $producemycode[0]["pice"],
+                                                                                  'image' => $producemycode[0]["pic"])));
+                    }
+
+                    if(!empty($_SESSION["cart_item"])){
+                        if(in_array($producemycode[0]["content"],array_keys($_SESSION["cart_item"]))){
+                            foreach($_SESSION["cart_item"] as $k => $v){
+                                if($producemycode[0]["content"] == $k){
+                                    if(empty($_SESSION["cart_item"][$k]["quantity"])){
+                                        $_SESSION["cart_item"][$k]["quantity"] = 0;
+                                    }
+                                    $_SESSION["cart"][$k]["quantity"] += $_POST["quantity"];
+                                }
+                            }
+                        }else{
+                            $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"], $itemArray);
+                        }
+                    }else{
+                        $_SESSION["cart_item"] = $itemArray;
+                    }
+                break;
+                case "remove":
+                    if(!empty($_SESSION["cart_item"])){
+                        foreach($_SESSION["cart_item"] as $k => $v){
+                            if($_GET["content"] == $k)
+                                unset($_SESSION["cart_item"][$k]);
+                            
+                            if(empty($_SESSION["cart_item"]))
+                                unset($_SESSION["cart_item"]);
+                        }
+                    }
+                break;
+
+                case "empty" :
+                    unset($_SESSION["cart_item"]);
+                break;
+            }
+        }
+?>
 <!DOCTYPE html>
 
 <html>
@@ -111,6 +162,14 @@
     <div class="txt-heading">Shopping Cart</div>
     <a href="shopping.php?action=empty" id="btnEmpty">Empty Cart</a>
 
+    <?php
+
+    if (isset($_SESSION["cart_item"])){
+        $total_quantity = 0;
+        $total_price = 0;
+    
+    ?>
+
     <table class="tbl-cart" cellpadding="10" cellspacing="1">
         <tbody>
             <tr>
@@ -121,35 +180,63 @@
                 <th style="text-align: right;" width="10%">Price</th>
                 <th style="text-align: right;" width="5%">Remove</th>
             </tr>
-
+            <?php
+                foreach ($_SESSION["cart_item"] as $item){
+                    $item_price = $item["quantity"] * $item["pice"]
+            
+            ?>
             <tr>
-                <td img scr="product-images" alt=""></td>
-                <td>ABCDEF</td>
-                <td style="text-align: right;">1</td>
-                <td style="text-align: right;">$1000</td>
-                <td style="text-align: right;">$1000</td>
-                <td style="text-align: center;"><a href="#" class="btnRemoveAction"><img style="width: 20px;"src="image/icon-delete.png" alt="Remove Item"></td>
+                <td img src="<?php echo $item["pic"]; ?>" alt=""></td>
+                <?php echo $item["topic"]; ?>
+                <td><?php echo $item["content"]; ?></td>
+                <td style="text-align: right;"><?php echo $item["quantity"]; ?></td>
+                <td style="text-align: right;"> <?php echo"$ " . $item["pice"]; ?></td>
+                <td style="text-align: right;"><?php echo"$ " . number_format($item["pice"],2); ?></td>
+                <td style="text-align: center;"><a href="shopping.php?action=remove&content=<?php echo $item["content"]; ?>" class="btnRemoveAction"><img style="width: 20px;"src="image/icon-delete.png" alt="Remove Item"></td>
             </tr>
+
+                    <?php
+                    $total_quantity += $item["quantity"];
+                    $total_price += ($item["pice"] * $item["quantity"]);
+                }
+                    ?>
 
             <tr>
                 <td colspan="2" align="right">Total:</td>
-                <td align="right">1</td>
-                <td align="right" colspan="2">$1000.00</td>
+                <td align="right"><?php echo $total_quantity; ?></td>
+                <td align="right" colspan="2"><?php echo"$ " . number_format($total_price,2); ?></td>
                 <td></td>
             </tr>
         </tbody>
     </table>
+    <?php
+                } else{
+    ?>
+        <div class ="no-records">your cart is empty</div>
+    <?php
+                }
+    ?>
 </div>
 
 <div id="product-grid">
-    <div class="producy-item">
-        <form action="shopping.php?action=add&code">
+    <?php 
+    
+        $product_array = $db_handle->runquery("SELECT * FROM Shopping_Otop ORDER BY id ASC");
+
+        if(!empty($product_array)) {
+            foreach($product_array as $key => $value){
+
+          
+    
+    ?>
+    <div class="product-item">
+        <form action="shopping.php?action=add&content=<?php echo $product_array[$key]["content"]; ?>" method="post">
             <div class="product-image">
-                <img src="" alt="images">
+                <img src="<?php echo $product_array [$key] ["pic"]; ?>" alt="images">
             </div>
             <div class="product-title-footer">
-                <div class="product-title">Camera</div>
-                <div class="product-price">$1000</div>
+                <div class="product-title"><?php echo $product_array [$key] ["topic"]; ?></div>
+                <div class="product-price"><?php echo "$" . $product_array [$key] ["pice"]; ?></div>
                 <div class="cart-action">
                     <input type="text" class="product-quantity" name="quantity" value="1" size="2">
                     <input type="submit" value="Add to cart" class="btnAddAction">
@@ -157,6 +244,12 @@
             </div>
         </form>
     </div>
+
+    <?php 
+            }
+        }
+        
+    ?>
 </div>
 
 
