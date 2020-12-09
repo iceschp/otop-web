@@ -80,7 +80,9 @@
     <p class="pcenter">______________</p>
 
     <div class="container">
+        <p class="pcenter">Developer</p>
         <div class="row d-flex justify-content-center">
+            
             <!-- milk profile -->
             <div class="col">
                 <div class="txtcenter">
@@ -113,14 +115,13 @@
     <br>
     <!-- code -->
     <div class="txtusing">
+        <p class="pcenter">Create By</p>
     <div class="container  bgtxt">
         <div class="row">
-            <div class="col-md">
-                <p>We're using HTML CSS JAVASCRIPT PHP on this website.</p>
-            </div>
-            <div class="col-md">
-                <img src="image/logocode.png" width="500px">
-            </div>
+
+            <div class="col-md-12">
+                <img class="imgcen" src="image/code1.png" width="80%">
+            
         </div>
     </div>
     </div>
@@ -147,8 +148,8 @@
                 <ul class="box">
                     <li><a href="#">Theme Design</a></li>
                     <li><a href="#">Plugin Design</a></li>
-                    <li><a href="#">Plugin Design</a></li>
-                    <li><a href="#">Plugin Design</a></li>
+                    <li><a href="#">Code Design</a></li>
+                    <li><a href="#">Database Design</a></li>
                 </ul>
             </li>
             <li class="features">
@@ -156,8 +157,8 @@
                 <ul class="box">
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </li>
             
