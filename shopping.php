@@ -1,18 +1,12 @@
 <?php
     session_start();
     include_once('function.php');
-
+    include_once('shoppingdb.php');
     if($_SESSION['id']==""){
         header("location: signin.php");
     } else {
        
     }
-
-?>
-<!-- มัน error เพราะว่า ตรงนี้มันซ้ำซ้อนรึเปล่า -->
-<?php 
-    session_start();
-    include_once('shoppingdb.php');
     $db_handle = new dbcontroller();
 
         if(!empty($_GET["action"])){
@@ -61,6 +55,11 @@
                 break;
             }
         }
+?>
+
+<?php 
+    
+    
 ?>
 <!DOCTYPE html>
 
