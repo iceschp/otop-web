@@ -15,10 +15,10 @@
                     if(!empty($_POST["quantity"])) {
                         $producemycode = $db_handle -> runquery("SELECT * FROM Shopping_Otop WHERE content = '". $_GET["content"] ."'");
                         $itemArray = array($producemycode[0]["content"] => (array('name' => $producemycode[0]["topic"],
-                                                                                  'code' => $producemycode[0]["content"], 
+                                                                                  'content' => $producemycode[0]["content"], 
                                                                                   'quantity' => $_POST[0]["quantity"],
-                                                                                  'price' => $producemycode[0]["pice"],
-                                                                                  'image' => $producemycode[0]["pic"])));
+                                                                                  'content' => $producemycode[0]["content"],
+                                                                                  'pic' => $producemycode[0]["pic"])));
                     }
 
                     if(!empty($_SESSION["cart_item"])){
