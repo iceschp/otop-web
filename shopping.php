@@ -9,6 +9,7 @@
     }
 
 ?>
+<!-- มัน error เพราะว่า ตรงนี้มันซ้ำซ้อนรึเปล่า -->
 <?php 
     session_start();
     include_once('shoppingdb.php');
