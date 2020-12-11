@@ -208,7 +208,7 @@
               <img class="imgfoot" src="image/icon.png">
                 
                
-                    <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</a></li>
+                    <li><a>บริการทุกระดับประทับใจ ส่งไวยิ่งกว่า Garb</a></li>
                     
                     <span><a href="#" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
                     <span><a href="#" class="socials"><i class="fab fa-twitter-square"></i></a></span>

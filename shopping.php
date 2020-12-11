@@ -1,66 +1,15 @@
 <?php
     session_start();
     include_once('function.php');
-    include_once('shoppingdb.php');
+
     if($_SESSION['id']==""){
         header("location: signin.php");
     } else {
        
     }
-    $db_handle = new dbcontroller();
 
-        if(!empty($_GET["action"])){
-            switch($_GET["action"]){
-                case "add":
-                    if(!empty($_POST["quantity"])) {
-                        $producemycode = $db_handle -> runQuery("SELECT * FROM Shopping_Otop WHERE code = '". $_GET["code"] ."'");
-                        $itemArray = array($producemycode[0]["code"] => (array('name' => $producemycode[0]["name"],
-                                                                                  'code' => $producemycode[0]["code"], 
-                                                                                  'quantity' => $_POST[0]["quantity"],
-                                                                                  'price' => $producemycode[0]["price"],
-                                                                                  'image' => $producemycode[0]["image"])));
-                    }
-
-                    if(!empty($_SESSION["cart_item"])){
-                        if(in_array($producemycode[0]["content"],array_keys($_SESSION["cart_item"]))){
-                            foreach($_SESSION["cart_item"] as $k => $v){
-                                if($producemycode[0]["code"] == $k){
-                                    if(empty($_SESSION["cart_item"][$k]["quantity"])){
-                                        $_SESSION["cart_item"][$k]["quantity"] = 0;
-                                    }
-                                    $_SESSION["cart"][$k]["quantity"] += $_POST["quantity"];
-                                }
-                            }
-                        }else{
-                            $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"], $itemArray);
-                        }
-                    }else{
-                        $_SESSION["cart_item"] = $itemArray;
-                    }
-                break;
-                case "remove":
-                    if(!empty($_SESSION["cart_item"])){
-                        foreach($_SESSION["cart_item"] as $k => $v){
-                            if($_GET["code"] == $k)
-                                unset($_SESSION["cart_item"][$k]);
-                            
-                            if(empty($_SESSION["cart_item"]))
-                                unset($_SESSION["cart_item"]);
-                        }
-                    }
-                break;
-
-                case "empty" :
-                    unset($_SESSION["cart_item"]);
-                break;
-            }
-        }
 ?>
 
-<?php 
-    
-    
-?>
 <!DOCTYPE html>
 
 <html>
@@ -162,14 +111,6 @@
     <div class="txt-heading">Shopping Cart</div>
     <a href="shopping.php?action=empty" id="btnEmpty">Empty Cart</a>
 
-    <?php
-
-    if (isset($_SESSION["cart_item"])){
-        $total_quantity = 0;
-        $total_price = 0;
-    
-    ?>
-
     <table class="tbl-cart" cellpadding="10" cellspacing="1">
         <tbody>
             <tr>
@@ -180,63 +121,35 @@
                 <th style="text-align: right;" width="10%">Price</th>
                 <th style="text-align: right;" width="5%">Remove</th>
             </tr>
-            <?php
-                foreach ($_SESSION["cart_item"] as $item){
-                    $item_price = $item["quantity"] * $item["price"]
-            
-            ?>
-            <tr>
-                <td img src="<?php echo $item["image"]; ?>" alt=""></td>
-                <?php echo $item["name"]; ?>
-                <td><?php echo $item["code"]; ?></td>
-                <td style="text-align: right;"><?php echo $item["quantity"]; ?></td>
-                <td style="text-align: right;"> <?php echo"$ " . $item["price"]; ?></td>
-                <td style="text-align: right;"><?php echo"$ " . number_format($item["price"],2); ?></td>
-                <td style="text-align: center;"><a href="shopping.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img style="width: 20px;"src="image/icon-delete.png" alt="Remove Item"></td>
-            </tr>
 
-                    <?php
-                    $total_quantity += $item["quantity"];
-                    $total_price += ($item["price"] * $item["quantity"]);
-                }
-                    ?>
+            <tr>
+                <td img scr="product-images" alt=""></td>
+                <td>ABCDEF</td>
+                <td style="text-align: right;">1</td>
+                <td style="text-align: right;">$1000</td>
+                <td style="text-align: right;">$1000</td>
+                <td style="text-align: center;"><a href="#" class="btnRemoveAction"><img style="width: 20px;"src="image/icon-delete.png" alt="Remove Item"></td>
+            </tr>
 
             <tr>
                 <td colspan="2" align="right">Total:</td>
-                <td align="right"><?php echo $total_quantity; ?></td>
-                <td align="right" colspan="2"><?php echo"$ " . number_format($total_price,2); ?></td>
+                <td align="right">1</td>
+                <td align="right" colspan="2">$1000.00</td>
                 <td></td>
             </tr>
         </tbody>
     </table>
-    <?php
-                } else{
-    ?>
-        <div class ="no-records">your cart is empty</div>
-    <?php
-                }
-    ?>
 </div>
 
 <div id="product-grid">
-    <?php 
-    
-        $product_array = $db_handle->runQuery("SELECT * FROM Shopping_Otop ORDER BY id ASC");
-
-        if(!empty($product_array)) {
-            foreach($product_array as $key => $value){
-
-          
-    
-    ?>
-    <div class="product-item">
-        <form action="shopping.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>" method="post">
+    <div class="producy-item">
+        <form action="shopping.php?action=add&code">
             <div class="product-image">
-                <img src="<?php echo $product_array [$key] ["image"]; ?>" alt="images">
+                <img src="" alt="images">
             </div>
             <div class="product-title-footer">
-                <div class="product-title"><?php echo $product_array [$key] ["name"]; ?></div>
-                <div class="product-price"><?php echo "$" . $product_array [$key] ["price"]; ?></div>
+                <div class="product-title">Camera</div>
+                <div class="product-price">$1000</div>
                 <div class="cart-action">
                     <input type="text" class="product-quantity" name="quantity" value="1" size="2">
                     <input type="submit" value="Add to cart" class="btnAddAction">
@@ -244,12 +157,6 @@
             </div>
         </form>
     </div>
-
-    <?php 
-            }
-        }
-        
-    ?>
 </div>
 
 
@@ -275,11 +182,11 @@ die("Connection failed: " . mysqli_connect_error());
 $sql = "SELECT * FROM Shopping_Otop";
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_assoc($result)) {
-  $id = $row["id"];
-	$topic = $row["name"];
-	$pic = $row["image"];
-    $content = $row["code"];
-    $price = $row["price"];
+  $id = $row["ID"];
+	$topic = $row["topic"];
+	$pic = $row["pic"];
+    $content = $row["content"];
+    $price = $row["pice"];
     print "<div class=\"container\" style=\"margin: 5;\">";
    print " <div class=\"row\">";
    print " <div class=\"col-sm-4\">";
@@ -355,7 +262,7 @@ mysqli_close($conn);
               <img class="imgfoot" src="image/icon.png">
                 
                
-                    <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente, optio minima similique aliquam rerum excepturi maiore.</a></li>
+                    <li><a>คณะนวัตกรรมสื่อสารสังคม สาขาคอมพิวเตอร์เพื่อการสื่อสาร</a></li>
                     
                     <span><a href="https://www.facebook.com/eatgostudygo" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
                     <span><a href="https://twitter.com" class="socials"><i class="fab fa-twitter-square"></i></a></span>
