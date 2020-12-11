@@ -13,18 +13,18 @@
             switch($_GET["action"]){
                 case "add":
                     if(!empty($_POST["quantity"])) {
-                        $producemycode = $db_handle -> runquery("SELECT * FROM Shopping_Otop WHERE content = '". $_GET["content"] ."'");
-                        $itemArray = array($producemycode[0]["content"] => (array('name' => $producemycode[0]["topic"],
-                                                                                  'content' => $producemycode[0]["content"], 
+                        $producemycode = $db_handle -> runQuery("SELECT * FROM Shopping_Otop WHERE code = '". $_GET["code"] ."'");
+                        $itemArray = array($producemycode[0]["code"] => (array('name' => $producemycode[0]["name"],
+                                                                                  'code' => $producemycode[0]["code"], 
                                                                                   'quantity' => $_POST[0]["quantity"],
-                                                                                  'pice' => $producemycode[0]["pice"],
-                                                                                  'pic' => $producemycode[0]["pic"])));
+                                                                                  'price' => $producemycode[0]["price"],
+                                                                                  'image' => $producemycode[0]["image"])));
                     }
 
                     if(!empty($_SESSION["cart_item"])){
                         if(in_array($producemycode[0]["content"],array_keys($_SESSION["cart_item"]))){
                             foreach($_SESSION["cart_item"] as $k => $v){
-                                if($producemycode[0]["content"] == $k){
+                                if($producemycode[0]["code"] == $k){
                                     if(empty($_SESSION["cart_item"][$k]["quantity"])){
                                         $_SESSION["cart_item"][$k]["quantity"] = 0;
                                     }
@@ -41,7 +41,7 @@
                 case "remove":
                     if(!empty($_SESSION["cart_item"])){
                         foreach($_SESSION["cart_item"] as $k => $v){
-                            if($_GET["content"] == $k)
+                            if($_GET["code"] == $k)
                                 unset($_SESSION["cart_item"][$k]);
                             
                             if(empty($_SESSION["cart_item"]))
@@ -182,22 +182,22 @@
             </tr>
             <?php
                 foreach ($_SESSION["cart_item"] as $item){
-                    $item_price = $item["quantity"] * $item["pice"]
+                    $item_price = $item["quantity"] * $item["price"]
             
             ?>
             <tr>
-                <td img src="<?php echo $item["pic"]; ?>" alt=""></td>
-                <?php echo $item["topic"]; ?>
-                <td><?php echo $item["content"]; ?></td>
+                <td img src="<?php echo $item["image"]; ?>" alt=""></td>
+                <?php echo $item["name"]; ?>
+                <td><?php echo $item["code"]; ?></td>
                 <td style="text-align: right;"><?php echo $item["quantity"]; ?></td>
-                <td style="text-align: right;"> <?php echo"$ " . $item["pice"]; ?></td>
-                <td style="text-align: right;"><?php echo"$ " . number_format($item["pice"],2); ?></td>
-                <td style="text-align: center;"><a href="shopping.php?action=remove&content=<?php echo $item["content"]; ?>" class="btnRemoveAction"><img style="width: 20px;"src="image/icon-delete.png" alt="Remove Item"></td>
+                <td style="text-align: right;"> <?php echo"$ " . $item["price"]; ?></td>
+                <td style="text-align: right;"><?php echo"$ " . number_format($item["price"],2); ?></td>
+                <td style="text-align: center;"><a href="shopping.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img style="width: 20px;"src="image/icon-delete.png" alt="Remove Item"></td>
             </tr>
 
                     <?php
                     $total_quantity += $item["quantity"];
-                    $total_price += ($item["pice"] * $item["quantity"]);
+                    $total_price += ($item["price"] * $item["quantity"]);
                 }
                     ?>
 
@@ -221,7 +221,7 @@
 <div id="product-grid">
     <?php 
     
-        $product_array = $db_handle->runQuery("SELECT * FROM Shopping_Otop ORDER BY ID ASC");
+        $product_array = $db_handle->runQuery("SELECT * FROM Shopping_Otop ORDER BY id ASC");
 
         if(!empty($product_array)) {
             foreach($product_array as $key => $value){
@@ -230,13 +230,13 @@
     
     ?>
     <div class="product-item">
-        <form action="shopping.php?action=add&content=<?php echo $product_array[$key]["content"]; ?>" method="post">
+        <form action="shopping.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>" method="post">
             <div class="product-image">
-                <img src="<?php echo $product_array [$key] ["pic"]; ?>" alt="images">
+                <img src="<?php echo $product_array [$key] ["image"]; ?>" alt="images">
             </div>
             <div class="product-title-footer">
-                <div class="product-title"><?php echo $product_array [$key] ["topic"]; ?></div>
-                <div class="product-price"><?php echo "$" . $product_array [$key] ["pice"]; ?></div>
+                <div class="product-title"><?php echo $product_array [$key] ["name"]; ?></div>
+                <div class="product-price"><?php echo "$" . $product_array [$key] ["price"]; ?></div>
                 <div class="cart-action">
                     <input type="text" class="product-quantity" name="quantity" value="1" size="2">
                     <input type="submit" value="Add to cart" class="btnAddAction">
@@ -275,11 +275,11 @@ die("Connection failed: " . mysqli_connect_error());
 $sql = "SELECT * FROM Shopping_Otop";
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_assoc($result)) {
-  $id = $row["ID"];
-	$topic = $row["topic"];
-	$pic = $row["pic"];
-    $content = $row["content"];
-    $price = $row["pice"];
+  $id = $row["id"];
+	$topic = $row["name"];
+	$pic = $row["image"];
+    $content = $row["code"];
+    $price = $row["price"];
     print "<div class=\"container\" style=\"margin: 5;\">";
    print " <div class=\"row\">";
    print " <div class=\"col-sm-4\">";
