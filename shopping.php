@@ -17,7 +17,7 @@
                         $itemArray = array($producemycode[0]["content"] => (array('name' => $producemycode[0]["topic"],
                                                                                   'content' => $producemycode[0]["content"], 
                                                                                   'quantity' => $_POST[0]["quantity"],
-                                                                                  'content' => $producemycode[0]["content"],
+                                                                                  'pice' => $producemycode[0]["pice"],
                                                                                   'pic' => $producemycode[0]["pic"])));
                     }
 
