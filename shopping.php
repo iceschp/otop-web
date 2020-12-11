@@ -221,7 +221,7 @@
 <div id="product-grid">
     <?php 
     
-        $product_array = $db_handle->runquery("SELECT * FROM Shopping_Otop ORDER BY id ASC");
+        $product_array = $db_handle->runQuery("SELECT * FROM Shopping_Otop ORDER BY ID ASC");
 
         if(!empty($product_array)) {
             foreach($product_array as $key => $value){

@@ -16,7 +16,7 @@ class dbcontroller{
         return $conn;
     }
 
-    function runquery($query){
+    function runQuery($query){
         $result = mysqli_query($this->conn, $query);
 
         while($row = mysqli_fetch_assoc($result)){
@@ -26,7 +26,7 @@ class dbcontroller{
             return $resultset;
     }
 
-    function numrows($query){
+    function numRows($query){
         $result = mysqli_query($this->conn, $query);
         $rowcount = mysqli_num_rows($result);
         return $rowcount; 
