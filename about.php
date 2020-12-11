@@ -136,7 +136,7 @@
               <img class="imgfoot" src="image/icon.png">
                 
                
-                    <li><a>คณะนวัตกรรมสื่อสารสังคม สาขาคอมพิวเตอร์เพื่อการสื่อสาร</a></li>
+                    <li><a>วิทยาลัยนวัตกรรมสื่อสารสังคม เอกคอมพิวเตอร์เพื่อการสื่อสาร</a></li>
                     
                     <span><a href="https://www.facebook.com/eatgostudygo" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
                     <span><a href="https://twitter.com" class="socials"><i class="fab fa-twitter-square"></i></a></span>

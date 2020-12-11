@@ -208,7 +208,7 @@
               <img class="imgfoot" src="image/icon.png">
                 
                
-                    <li><a>บริการทุกระดับประทับใจ ส่งไวยิ่งกว่า Garb</a></li>
+                    <li><a>วิทยาลัยนวัตกรรมสื่อสารสังคม เอกคอมพิวเตอร์เพื่อการสื่อสาร</a></li>
                     
                     <span><a href="#" class="socials"><i class="fab fa-facebook-square" ></i></a></span>
                     <span><a href="#" class="socials"><i class="fab fa-twitter-square"></i></a></span>
